@@ -50,15 +50,18 @@ let zona = "";
 let peso = 0;
 let opcion = 0;
 
+
 while(opcion != 5) {
-  console.log("\nMenú RapidiEntrega:");
-  console.log("1. Definir Zona de Envío");
-  console.log("2. Definir Peso del Paquete (Kg)");
-  console.log("3. Aplicar Seguro (Opcional)");
-  console.log("4. Calcular Costo Total del Envío");
-  console.log("5. Salir");
   
-  opcion = parseInt(prompt("Bienvendido a RapidiEntrega. Ingrese una opción (1-5):"));
+ opcion = parseInt(prompt(
+  "📦 Menú RapidiEntrega 📦\n\n" +
+  "1. Definir Zona de Envío\n" +
+  "2. Definir Peso del Paquete (Kg)\n" +
+  "3. Aplicar Seguro (Opcional)\n" +
+  "4. Calcular Costo Total del Envío\n" +
+  "5. Salir\n\n" +
+  "Ingrese una opción (1-5):"
+));
   
   if(opcion === 1) {
     // Definir Zona
